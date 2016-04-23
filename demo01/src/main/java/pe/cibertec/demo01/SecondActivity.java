@@ -1,5 +1,6 @@
 package pe.cibertec.demo01;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -29,7 +30,10 @@ public class SecondActivity extends AppCompatActivity {
     View.OnClickListener btSecondGuardarOnClickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-
+            Intent intent = new Intent();
+            intent.putExtra(FirstActivity.ARG_NOMBRE,etSecondNombre.getText().toString().trim());
+            setResult(RESULT_OK,intent);
+            finish();
         }
     };
 }
