@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/etSecondNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su nombre"
+        android:inputType="textCapWords" />
+
+    <TextView
+        android:id="@+id/tvSecondNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="*Ingrese su nombre"/>
+
+    <EditText
+        android:id="@+id/etSecondApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su apellido"
+        android:inputType="textCapWords"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvSecondApellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="*Ingrese su apellido"/>
+
+    <EditText
+        android:id="@+id/etSecondDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingrese su DNI"
+        android:inputType="number"
+        android:maxLength="8"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvSecondDNI"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="*Ingrese su DNI"/>
+
+    <EditText
+        android:id="@+id/etSecondEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:maxLength="3"
+        android:hint="Ingrese su edad"
+        android:singleLine="true" />
+
+    <TextView
+        android:id="@+id/tvSecondEdad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#FF0000"
+        android:visibility="gone"
+        android:text="*Ingrese su edad"/>
+
+    <Button
+        android:id="@+id/btSecondGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Guardar" />
+</LinearLayout>
